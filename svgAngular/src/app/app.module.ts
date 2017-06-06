@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SvgLinechartComponent } from './svg-linechart/svg-linechart.component';
 import { SvgOneComponent } from './svg-one/svg-one.component';
 import { SvgOneChildComponent } from './svg-one-child/svg-one-child.component';
+import { SvgTemplateComponent } from './svg-template/svg-template.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SvgLinechartComponent,
     SvgOneComponent,
-    SvgOneChildComponent
+    SvgOneChildComponent,
+    SvgTemplateComponent
   ],
   imports: [
     BrowserModule,
