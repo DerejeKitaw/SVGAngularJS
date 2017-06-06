@@ -8,6 +8,8 @@ import { SvgLinechartComponent } from './svg-linechart/svg-linechart.component';
 import { SvgOneComponent } from './svg-one/svg-one.component';
 import { SvgOneChildComponent } from './svg-one-child/svg-one-child.component';
 import { SvgTemplateComponent } from './svg-template/svg-template.component';
+import { SvgEventsComponent } from './svg-events/svg-events.component';
+import { SvgDraggableComponent } from './svg-draggable/svg-draggable.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SvgTemplateComponent } from './svg-template/svg-template.component';
     SvgLinechartComponent,
     SvgOneComponent,
     SvgOneChildComponent,
-    SvgTemplateComponent
+    SvgTemplateComponent,
+    SvgEventsComponent,
+    SvgDraggableComponent
   ],
   imports: [
     BrowserModule,
