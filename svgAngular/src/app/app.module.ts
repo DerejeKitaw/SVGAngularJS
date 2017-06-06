@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { SvgLinechartComponent } from './svg-linechart/svg-linechart.component';
+import { SvgOneComponent } from './svg-one/svg-one.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SvgLinechartComponent,
+    SvgOneComponent
   ],
   imports: [
     BrowserModule,
