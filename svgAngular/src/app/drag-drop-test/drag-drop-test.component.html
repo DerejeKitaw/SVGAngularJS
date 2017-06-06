@@ -1,0 +1,11 @@
+<h1>Examples of <code>ondrag</code>, <code>ondrop</code>, <code>ondragstart</code>, <code>ondragover</code></h1>
+ <div> <!-- <div class="source"> -->
+   <p id="source" (drag)="drag_handler($event);" (dragstart)="dragstart_handler($event);" draggable="true">
+     Select this element, drag it to the Drop Zone and then release the selection to move the element.</p>
+ </div>
+ <div 
+  id="target" 
+  (dragleave)="dragleave_handler($event);" 
+  (drop)="drop_handler($event);" 
+  (dragover)="dragover_handler($event);"
+ >{{dropZone}} </div>

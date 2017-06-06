@@ -9,7 +9,11 @@ import { SvgOneComponent } from './svg-one/svg-one.component';
 import { SvgOneChildComponent } from './svg-one-child/svg-one-child.component';
 import { SvgTemplateComponent } from './svg-template/svg-template.component';
 import { SvgEventsComponent } from './svg-events/svg-events.component';
-import { SvgDraggableComponent } from './svg-draggable/svg-draggable.component';
+import { SvgDraggableDirective } from './svg-draggable.directive';
+import { DragService } from "app/drag.service";
+import { SvgDropTargetDirectiveDirective } from './svg-drop-target-directive.directive';
+import { SvgDropTargetDirective } from './svg-drop-target.directive';
+import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +23,17 @@ import { SvgDraggableComponent } from './svg-draggable/svg-draggable.component';
     SvgOneChildComponent,
     SvgTemplateComponent,
     SvgEventsComponent,
-    SvgDraggableComponent
+    SvgDraggableDirective,
+    SvgDropTargetDirectiveDirective,
+    SvgDropTargetDirective,
+    DragDropTestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DragService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
