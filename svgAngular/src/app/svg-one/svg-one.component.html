@@ -2,15 +2,17 @@
   svg-one works!
 </p>
 
-<svg viewBox="0 0  1260 640" >
-  <svg:rect 
-  x="50" 
-  y="50" 
+<svg #svgelement [attr.viewBox]="getViewbox()"
+style="width: 100%; height: 100%"
+>
+<svg:rect 
+  x="10" 
+  y="10" 
   stroke="black" 
   id="e1_rectangle" 
   style="stroke-width: 1px;" 
-  [attr.width]="width" 
-  height="400" 
+  [attr.width]="rect_width" 
+  [attr.height]="rect_height" 
   fill="khaki" />
   <svg:g svg-one-child />
 </svg>
