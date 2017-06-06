@@ -21,6 +21,14 @@ export class SvgTemplateComponent implements OnInit {
       "class": "green",
       "label":"Green"
     }
+    ,
+     {
+      "x": "45",
+      "y_label": "65",
+      "y_levation": "60",
+      "class": "red",
+      "label":"Red"
+    }
   ];
   constructor() { }
 
