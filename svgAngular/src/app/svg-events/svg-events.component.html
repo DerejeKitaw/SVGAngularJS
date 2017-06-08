@@ -1,0 +1,20 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <defs>
+    <g id="Port">
+      <circle style="fill: inherit;" r="5" />
+    </g>
+  </defs>
+  <svg *ngFor="let item of dots">
+
+    <text [attr.y]="item.y_label" >
+      {{item.label}}</text>
+
+    <use [attr.class]="item.class" 
+         [attr.x]="item.x" 
+         [attr.y]="item.y_levation" 
+         (mousedown)="dragCircle($event)"
+         href="#Port" />
+  </svg>
+
+</svg>
