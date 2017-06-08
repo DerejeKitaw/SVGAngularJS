@@ -14,6 +14,7 @@ import { DragService } from "app/drag.service";
 import { SvgDropTargetDirective } from './svg-drop-target.directive';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
 import { HiddenDirective } from './hidden.directive';
+import { DefaultCoordinateComponent } from './01_svgCoordinates/default-coordinate/default-coordinate.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HiddenDirective } from './hidden.directive';
     SvgDraggableDirective,
     SvgDropTargetDirective,
     DragDropTestComponent,
-    HiddenDirective
+    HiddenDirective,
+    DefaultCoordinateComponent
   ],
   imports: [
     BrowserModule,
