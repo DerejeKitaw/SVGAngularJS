@@ -11,9 +11,9 @@ import { SvgTemplateComponent } from './svg-template/svg-template.component';
 import { SvgEventsComponent } from './svg-events/svg-events.component';
 import { SvgDraggableDirective } from './svg-draggable.directive';
 import { DragService } from "app/drag.service";
-import { SvgDropTargetDirectiveDirective } from './svg-drop-target-directive.directive';
 import { SvgDropTargetDirective } from './svg-drop-target.directive';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
+import { HiddenDirective } from './hidden.directive';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,9 @@ import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component
     SvgTemplateComponent,
     SvgEventsComponent,
     SvgDraggableDirective,
-    SvgDropTargetDirectiveDirective,
     SvgDropTargetDirective,
-    DragDropTestComponent
+    DragDropTestComponent,
+    HiddenDirective
   ],
   imports: [
     BrowserModule,

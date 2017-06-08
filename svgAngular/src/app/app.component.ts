@@ -7,6 +7,7 @@ import {SvgLinechartComponent} from './svg-linechart/svg-linechart.component';
 })
 export class AppComponent {
   title = 'app works!';
+  val = true;
   @ViewChild("linechart") linechart : SvgLinechartComponent;
 
   datapoints : any = [
